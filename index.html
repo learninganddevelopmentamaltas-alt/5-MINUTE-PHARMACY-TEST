@@ -133,12 +133,12 @@
 
     <div class="timeout-overlay" id="timeoutScreen">
         <h1>Time is Up!</h1>
-        <p>The 10 minutes allocated for this test have expired.</p>
+        <p>The 5 minutes allocated for this test have expired.</p>
     </div>
 
     <script>
         // Set test duration in seconds (10 minutes = 600 seconds)
-        let timeRemaining = 600; 
+        let timeRemaining = 300; 
         const timerElement = document.getElementById('timer');
         const timeoutScreen = document.getElementById('timeoutScreen');
         const quizIframe = document.getElementById('quiz-iframe');
@@ -161,7 +161,7 @@
             }
 
             timeRemaining--;
-        }, 1000);
+        }, 500);
     </script>
 
 </body>
